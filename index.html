@@ -12,7 +12,58 @@
 
     <body>
         <div class="mainDiv container-sm d-flex justify-content-center">
-            
+            <div class="userForm">
+                <div class="headerWrapper d-flex justify-content-center">
+                    <h2 id="formHeader">Fill out this form</h2>
+                </div>   
+                <form action="/test" method="get">
+
+                    <div class="formGroup">
+                        <label class="label" for="firstName">Name</label>
+                        <div class="nameInputWrapper row">
+                            <input 
+                                type="text" class="form-control col" name="firstName" id="firstName" placeholder="First Name" required>
+                            <input 
+                                type="text" class="form-control col" name="lastName" id="lastName" placeholder="Last Name" required>
+                        </div> 
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="label" for="address">Address</label>   
+                        <div class="row">     
+                            <input 
+                                type="text" class="form-control col" name="address" id="address" placeholder="Address" maxlength="35" required>
+                        </div>            
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="label" for="dateOfBirth">Date Of Birth</label>   
+                        <div class="row">     
+                            <input class="form-control col" type="date" name="dateOfBirth" id="dateOfBirth">
+                        </div>            
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="label" for="gender">Gender</label>   
+                        <div class="row">     
+                            <select name="gender" id="gender" class="dropdown col">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>                                
+                            </select>
+                        </div>            
+                    </div>
+
+                    <div class="formGroup">
+                        <label class="label" for="notes">Notes</label>   
+                        <div class="row" id="textAreaWrapper">     
+                            <textarea id="notes" name="notes" rows="4" cols="20" wrap="physical"></textarea>
+                        </div>            
+                    </div>
+
+                    <button type="submit" class="submitButton">Submit</button>
+
+                </form>
+            </div>
         </div>
         <script src="scripts.js"></script>
     </body>

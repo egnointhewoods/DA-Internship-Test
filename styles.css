@@ -2,3 +2,59 @@ body{
     margin: 0;
     background-color: #6182a7;
 }
+#formHeader{
+    font-size: 25px;
+}
+form{
+    padding: 10px;
+}
+.label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.formGroup{
+    margin-bottom: 20px;
+}
+.row{
+    margin: 0px;
+}
+.form-control{
+    height: 35px;
+    background: white;
+    color: rgba(0,0,0,.8);
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border: none;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+.userForm{
+    width: 600px;
+    height: auto;
+    margin-top: 40px;
+    opacity: 90%;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    padding: 20px;
+}
+.dropdown, #textAreaWrapper{
+    margin-right: 20px;
+}
+.submitButton{
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 450px) {
+    form{
+        padding: 0px;
+    }
+    .form-control{
+        margin-right: 5px;
+    }
+    .dropdown, #textAreaWrapper{
+        margin-right: 5px;
+    }
+}
