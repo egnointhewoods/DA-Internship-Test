@@ -19,12 +19,10 @@
                 <form>
 
                     <div class="formGroup">
-                        <label class="label" for="firstName">Name</label>
+                        <label class="label" for="firstName">Name <span style="font-size: small;">(Letters only)</span></label>
                         <div class="nameInputWrapper row">
-                            <input 
-                                type="text" class="form-control col" name="firstName" id="firstName" placeholder="First Name" required>
-                            <input 
-                                type="text" class="form-control col" name="lastName" id="lastName" placeholder="Last Name" required>
+                            <input type="text" pattern="[A-Za-z]+" class="form-control col" name="firstName" id="firstName" placeholder="First Name" title="letters only" required />
+                            <input type="text" pattern="[A-Za-z]+" class="form-control col" name="lastName" id="lastName" placeholder="Last Name" title="letters only" required />
                         </div> 
                     </div>
 
