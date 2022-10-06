@@ -53,8 +53,6 @@ function constructTableElement(){
         localStorage.clear();
     }
 
-    console.log(parsedData());
-
     function deleteRow(id){
         event.stopPropagation();
         localStorage.setItem(id, JSON.stringify('Deleted'));
@@ -90,7 +88,6 @@ if(localStorage.length > 0){
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-
     if(localStorage.length == 0){
         id = 0;
     }
@@ -106,4 +103,5 @@ form.addEventListener('submit', (event) => {
     tableRow.innerHTML = '';
     constructTableElement();
     id++;
+    document.querySelector('form').reset(); //Clears the form inputs
 })
